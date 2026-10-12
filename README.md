@@ -8,7 +8,7 @@
 [![Next.js 16](https://img.shields.io/badge/Next.js-16%2B-000000.svg?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![SerpApi](https://img.shields.io/badge/SerpApi-Live%20Search%20Tools-E87A1E.svg)](https://serpapi.com/)
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Showcase%20Ready-000000.svg?logo=vercel&logoColor=white)](VERCEL_DEPLOYMENT.md)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Showcase-000000.svg?logo=vercel&logoColor=white)](https://frontend-green-ten-30.vercel.app)
 [![Tests Passing](https://img.shields.io/badge/pytest-20%20passed-22c55e.svg?logo=pytest&logoColor=white)](https://docs.pytest.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -143,11 +143,11 @@ ScoutPilot enforces strict evidence lineage:
 - **Deterministic Scoring Formula (0 to 100)**:
 
 $\text{Score} = \text{Base (45.0)} + \Delta(\text{budget}) + \Sigma(\text{specs}) + \text{Bonus}(\text{link}) - \text{Penalty}(\text{uncertainty})$
-  
-  - **Budget Adherence**: $+25.0$ points if $\le \text{budget\_max}$; value bonus $+5.0$ if $> ₹5,000$ under ceiling; $-25.0$ penalty if over budget.
-  - **Verified Attributes**: $+4.0$ to $+10.0$ per confirmed critical specification.
-  - **Source Reliability**: $+5.0$ for direct merchant domain link.
-  - **Uncertainty Penalty**: $-10.0$ if $\ge 3$ required attributes are unconfirmed in the search metadata.
+
+  - **Budget Adherence**: +25.0 points if the price is at or below the budget maximum; value bonus +5.0 if > ₹5,000 under the ceiling; -25.0 penalty if over budget.
+  - **Verified Attributes**: +4.0 to +10.0 per confirmed critical specification.
+  - **Source Reliability**: +5.0 for direct merchant domain link.
+  - **Uncertainty Penalty**: -10.0 if ≥ 3 required attributes are unconfirmed in the search metadata.
 
 ### 4. Act: Decision Synthesis & Action Checklist
 
