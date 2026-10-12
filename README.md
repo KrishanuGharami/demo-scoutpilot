@@ -142,7 +142,7 @@ ScoutPilot enforces strict evidence lineage:
 - **Zero-Hallucination Policy**: If a vendor listing omits a specification (e.g., battery endurance or display refresh rate), ScoutPilot explicitly marks it as `"Not found"` rather than generating plausible filler.
 - **Deterministic Scoring Formula (0 to 100)**:
 
-Score = Base (45.0) + Δ(budget) + Σ(specs) + Bonus(link) − Penalty(uncertainty)
+$\text{Score} = \text{Base (45.0)} + \Delta(\text{budget}) + \Sigma(\text{specs}) + \text{Bonus}(\text{link}) - \text{Penalty}(\text{uncertainty})$
 
   - **Budget Adherence**: +25.0 points if the price is at or below the budget maximum; value bonus +5.0 if > ₹5,000 under the ceiling; -25.0 penalty if over budget.
   - **Verified Attributes**: +4.0 to +10.0 per confirmed critical specification.
